@@ -7,7 +7,7 @@
   "private": true,
   "dependencies": {
     "@david.kucsai/react-pdf-table": "^0.3.0",
-    "@react-pdf/renderer": "^2.0.21",
+    "@react-pdf/renderer": "^2.3.0",
     "@stripe/react-stripe-js": "^1.6.0",
     "@stripe/stripe-js": "^1.21.1",
     "@testing-library/jest-dom": "^5.11.4",
@@ -23,6 +23,7 @@
     "react-image-file-resizer": "^0.4.7",
     "react-lottie": "^1.2.3",
     "react-multi-carousel": "^2.6.5",
+    "react-pdf": "^6.2.2",
     "react-redux": "^7.2.4",
     "react-responsive-carousel": "^3.2.21",
     "react-router-dom": "^5.2.0",
@@ -32,9 +33,13 @@
     "redux-devtools-extension": "^2.13.9",
     "web-vitals": "^1.0.1"
   },
+  "overrides": {
+    "@react-pdf/font": "2.2.1",
+    "@react-pdf/pdfkit": "2.1.0"
+  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-scripts --openssl-legacy-provider start",
+    "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

@@ -51,7 +51,7 @@ function Header() {
         <SearchBar/>
         <div className="header__navigationOptions">
           <div className="my__avatar">
-          <Avatar src="https://joeschmoe.io/api/v1/random" />
+          <Avatar src="https://api.dicebear.com/5.x/pixel-art/svg" />
           <div
         className="header__user__dropdown" >
         <ul>
