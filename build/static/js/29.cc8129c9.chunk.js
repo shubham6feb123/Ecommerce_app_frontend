@@ -1,0 +1,2 @@
+(this.webpackJsonpclient=this.webpackJsonpclient||[]).push([[29],{706:function(e,t,c){"use strict";c.r(t);c(0);var n=c(720),r=c(126),s=c(30),i=c(6);t.default=function(){var e=Object(s.g)();return Object(i.jsx)(n.a,{status:"error",title:"Purchase Failed",subTitle:"Please check your card credentials or something went wrong.",extra:[Object(i.jsx)(r.a,{type:"primary",onClick:function(){e.push("/")},children:"Go Home"},"console"),Object(i.jsx)(r.a,{onClick:function(){e.push("/cart")},children:"Go to Cart"},"buy")]})}}}]);
+//# sourceMappingURL=29.cc8129c9.chunk.js.map
