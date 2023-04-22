@@ -25,3 +25,6 @@ yarn-error.log*
 
 
 #private secret file
+
+# Local Netlify folder
+.netlify
