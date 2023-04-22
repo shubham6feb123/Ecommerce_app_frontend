@@ -8,7 +8,6 @@ import Login from "./pages/auth/Login";
 import Register from "./pages/auth/Register";
 import Header from "./components/nav/Header";
 import Loading from "./components/Loading/Loading";
-// import Shop from "./pages/Shop";
 import "./App.css";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
