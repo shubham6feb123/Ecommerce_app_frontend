@@ -65,62 +65,62 @@ const App = () => {
   });
 
   return (
-    <Suspense fallback={<Loading/>}>
-    <div className="app">
-      <Router>
-        <Header />
-        <ToastContainer />
-        <Switch>
-          <Route exact path="/" component={Home} />
-          {/* <Route exact path="/shop" component={Shop} /> */}
-          <NotLogin exact path="/login">
-            <Login />
-          </NotLogin>
-          <NotLogin exact path="/register">
-            <Register />
-          </NotLogin>
-          <Route exact path="/product/:slug" component={SingleProduct} />
-          {/* <Route exact path="/cart" component={Cart}/> */}
-          <UserRoutes exact path="/cart">
-            <Cart />
-          </UserRoutes>
-          <SearchRoute path="/search">
-            <Search />
-          </SearchRoute>
-          <Route exact path="/support" component={Support}/>
-          <AdminRoutes path="/admin">
-            <Dashboard />
-          </AdminRoutes>
-          <NotLogin exact path="/register/registercomplete/">
-            <CompleteRegistrationForm />
-          </NotLogin>
-          <Route exact path="/forgotpassword" component={ForgotPassword} />
-          <UserRoutes exact path="/user/orders">
-            <History />
-          </UserRoutes>
-          <UserRoutes exact path="/userpassword">
-            <Password />
-          </UserRoutes>
-          <UserRoutes exact path="/checkout/">
-            <CheckOut />
-          </UserRoutes>
-          <UserRoutes exact path="/user/wishlist">
-            <WishList />
-          </UserRoutes>
-          <UserRoutes exact path="/payment/:user">
-            <Payment />
-          </UserRoutes>
-          <UserRoutes exact path="/payment/successful/:user">
-            <PaymentSuccessfull />
-          </UserRoutes>
-          <UserRoutes exact path="/payment/failed/:user">
-            <PaymentFailed />
-          </UserRoutes>
-          <Route exact component={NotFound} />
-        </Switch>
-        <Footer/>
-      </Router>
-    </div>
+    <Suspense fallback={<Loading />}>
+      <div className="app">
+        <Router>
+          <Header />
+          <ToastContainer />
+          <Switch>
+            <Route exact path="/" component={Home} />
+            {/* <Route exact path="/shop" component={Shop} /> */}
+            <NotLogin exact path="/login">
+              <Login />
+            </NotLogin>
+            <NotLogin exact path="/register">
+              <Register />
+            </NotLogin>
+            <Route exact path="/product/:slug" component={SingleProduct} />
+            {/* <Route exact path="/cart" component={Cart}/> */}
+            <UserRoutes exact path="/cart">
+              <Cart />
+            </UserRoutes>
+            <SearchRoute path="/search">
+              <Search />
+            </SearchRoute>
+            <Route exact path="/support" component={Support} />
+            <AdminRoutes path="/admin">
+              <Dashboard />
+            </AdminRoutes>
+            <NotLogin path="/register/registercomplete/">
+              <CompleteRegistrationForm />
+            </NotLogin>
+            <Route exact path="/forgotpassword" component={ForgotPassword} />
+            <UserRoutes exact path="/user/orders">
+              <History />
+            </UserRoutes>
+            <UserRoutes exact path="/userpassword">
+              <Password />
+            </UserRoutes>
+            <UserRoutes exact path="/checkout/">
+              <CheckOut />
+            </UserRoutes>
+            <UserRoutes exact path="/user/wishlist">
+              <WishList />
+            </UserRoutes>
+            <UserRoutes exact path="/payment/:user">
+              <Payment />
+            </UserRoutes>
+            <UserRoutes exact path="/payment/successful/:user">
+              <PaymentSuccessfull />
+            </UserRoutes>
+            <UserRoutes exact path="/payment/failed/:user">
+              <PaymentFailed />
+            </UserRoutes>
+            <Route exact component={NotFound} />
+          </Switch>
+          <Footer />
+        </Router>
+      </div>
     </Suspense>
   );
 };
